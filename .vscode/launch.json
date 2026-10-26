@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "自检(不联网)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.hello_llm",
+      "args": ["--selftest"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "调用一次 LLM",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.hello_llm",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

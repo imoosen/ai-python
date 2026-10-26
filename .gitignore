@@ -1,0 +1,24 @@
+# 虚拟环境(不入库,每人本地重建)
+.venv/
+
+# 凭据绝不入库(C6)
+.env
+.env.bak*
+.env.*.bak
+
+# WorkBuddy 本地记忆(符号链接,指向笔记目录)
+.workbuddy
+
+# Python 产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# 系统
+.DS_Store
+
+# WorkBuddy 项目记忆(符号链接,不入库)
+.workbuddy/
