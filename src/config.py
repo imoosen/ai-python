@@ -21,7 +21,9 @@ class Pricing:
     input_cache_miss: float
     output: float
 
-    def estimate(self, cache_hit_tokens: int, cache_miss_tokens: int, output_tokens: int) -> float:
+    def estimate(
+        self, cache_hit_tokens: int, cache_miss_tokens: int, output_tokens: int
+    ) -> float:
         """按真实用量估算单次调用成本(元)。
 
         缓存命中的输入按低价计,未命中的按高价计 —— 这是 DeepSeek 的计费方式,
